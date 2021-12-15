@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
+import MenuModal from "../modals/MenuModal";
 
 const Hamburger = () => {
   const [clicked, setClicked] = useState(false);
@@ -20,7 +20,7 @@ const Hamburger = () => {
         <span></span>
         <span></span>
       </div>
-      <Modal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
+      <MenuModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </>
   );
 };
